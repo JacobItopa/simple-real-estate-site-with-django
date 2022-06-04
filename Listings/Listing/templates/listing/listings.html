@@ -1,8 +1,9 @@
 {% extends 'listing/base.html' %}
 
 {% block content %}
+<a href="/create/" class="text-blue-500">Create a new Listing</a>
 {% for listing in listings %}
-    <div class="px-3 py-2 bg-gray-100 rounded-sm">
+    <div class="mt-2 px-3 py-2 bg-gray-100 rounded-sm">
         <h3 class="text-3xl text-gray-800">{{listing.title}}</h3>
         <a href="/listings/{{listing.pk}}/" class="text-blue-500">View details</a>
     </div>
